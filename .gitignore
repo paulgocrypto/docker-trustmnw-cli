@@ -1,0 +1,3 @@
+data/tmp/trustmnw-stats.json
+data/home/node/*
+!data/home/node/.gitkeep
