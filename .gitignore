@@ -1,3 +1,4 @@
 data/tmp/trustmnw-stats.json
 data/home/node/*
 !data/home/node/.gitkeep
+docker-compose-local.yml

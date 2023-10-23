@@ -11,17 +11,10 @@ COPY --from=node /usr/local/include /usr/local/include
 COPY --from=node /usr/local/bin /usr/local/bin
 
 RUN apk update && apk add --no-cache bash
-#RUN node -v
-
-#RUN npm --version
-
-#RUN npm install @morpheusnetwork/trustmnw-cli@latest -g
-#RUN npm view @morpheusnetwork/trustmnw-cli
-
 
 WORKDIR /home/node
 
-RUN apk add --no-cache -U sudo git curl procps-ng
+RUN apk add --no-cache -U sudo curl procps-ng
 
 RUN addgroup -S node && adduser -S node -G node
 
@@ -32,7 +25,10 @@ COPY --chown=node:node . .
 ENV NODE_ENV=production
 
 USER node
-#RUN /usr/local/bin/trustmnw-cli restart
+
+#RUN node -v
+#RUN npm --version
+#RUN npm view @morpheusnetwork/trustmnw-cli
 
 CMD ["bash"]
 
