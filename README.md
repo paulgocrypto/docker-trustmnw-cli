@@ -34,6 +34,9 @@ $ docker exec -it trustmnw /usr/local/bin/trustmnw-cli login
 $ docker exec -it trustmnw /usr/local/bin/trustmnw-cli status
 ```
 
+![image](https://github.com/paulgocrypto/docker-trustmnw-cli/assets/100031513/862d1994-91d3-467f-a9ff-9aa13768a240)
+
+
 NB: ```<ctrl> + <c>``` to exit.
 
 
