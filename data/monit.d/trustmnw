@@ -1,0 +1,4 @@
+CHECK PROCESS trustmnw 
+	MATCHING "node.*trustmnw-daemon.js" 
+	start program = "/usr/bin/docker exec -it trustmnw /usr/local/bin/trustmnw-cli restart"
+
