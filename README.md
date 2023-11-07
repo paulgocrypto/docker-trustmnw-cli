@@ -59,6 +59,10 @@ $ docker image ls
 $ docker exec -it trustmnw bash
 ```
 
+**force upgrade version, rebuild image**
+```bash
+$ docker-compose build --no-cache
+```
 
 ## TODO
 
